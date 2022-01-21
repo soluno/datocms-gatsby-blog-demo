@@ -12,9 +12,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
 
   return (
     <Container>
-      <HelmetDatoCms seo={blog.seo} favicon={site.favicon} htmlAttributes={{
-          lang: 'en',
-      }} />
+      <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
       <Intro />
       {heroPost && (
         <HeroPost
